@@ -20,8 +20,8 @@ function App() {
               <p> &lt;coding.school &#47; &gt; </p>
             </div>
             <ul className='text-center mt-5'>
-              <button className='btn0'>Get Started</button> 
-              <button className='btn0'>Sign In</button>
+              <a href='/coursepage'><button className='btn0'>Get Started</button></a>
+              <a href='#'><button className='btn0'>Sign In</button></a>
             </ul>
           </div>
         </div>

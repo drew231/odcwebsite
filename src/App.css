@@ -52,7 +52,7 @@ body {
 .hero-bg {
   width: 100%;
   min-height: 38em;
-  /* background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://scontent-cdt1-1.xx.fbcdn.net/v/t39.30808-6/279773297_120029260683937_5935627772276356556_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=6tf_Eufsa6YAX_5zCvX&_nc_zt=23&_nc_ht=scontent-cdt1-1.xx&oh=00_AfBZnRGOExRC4UrbDpapdljOkvvo5ZgGRuVC6JoTTZC7QA&oe=6398ED56'); */
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://scontent-cdt1-1.xx.fbcdn.net/v/t39.30808-6/279773297_120029260683937_5935627772276356556_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=6tf_Eufsa6YAX_5zCvX&_nc_zt=23&_nc_ht=scontent-cdt1-1.xx&oh=00_AfBZnRGOExRC4UrbDpapdljOkvvo5ZgGRuVC6JoTTZC7QA&oe=6398ED56');
   background: rgb(27, 23, 23);
   background-size: cover;
   background-repeat: no-repeat;
@@ -113,7 +113,7 @@ body {
 }
 
 
-ul .btn0 {
+ul a .btn0 {
   padding: 1em 2em;
   border: 0;
   margin: 10px;
@@ -136,12 +136,7 @@ ul .btn0:hover {
   }
 
   .hero-bg {
-    width: 100%;
-    min-height: 38em;
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://scontent-cdt1-1.xx.fbcdn.net/v/t39.30808-6/279773297_120029260683937_5935627772276356556_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=6tf_Eufsa6YAX_5zCvX&_nc_zt=23&_nc_ht=scontent-cdt1-1.xx&oh=00_AfBZnRGOExRC4UrbDpapdljOkvvo5ZgGRuVC6JoTTZC7QA&oe=6398ED56');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
   }
 
   .colon2 h2 {
@@ -158,5 +153,58 @@ ul .btn0:hover {
 
 }
 
-@media (max-width: 964px) {
+/* Navbar style */
+
+.navbar {
+  min-height: 90px;
+  background-color: orange;
+  padding-right: 8em !important;
+  padding-left: 8em !important;
+}
+
+@media (max-width: 896px) {
+  .navbar {
+    min-height: 90px;
+    background-color: orange;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+}
+
+form a button {
+    padding: .5em 1.5em;
+    border: 0;
+    margin: 10px;
+    text-align: center;
+    font-family: 'Syne', sans-serif;
+    font-weight: bold;
+    border-radius: 0;
+}
+
+form a button:hover {
+  background-color: black;
+  color: orange;
+  transition: all ease-in 0.1s;
+}
+
+/* footer style */
+.footer {
+  width: 100%;
+  height: 10em;
+  background-color: rgb(244, 196, 107);
+}
+
+.footer p {
+  text-align: center;
+  color: rgb(38, 38, 38);
+  line-height: 6em;
+  font-family: 'Syne', sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+/* box style */
+.box {
+  min-height: 30em;
+  background-color: dodgerblue;
 }
