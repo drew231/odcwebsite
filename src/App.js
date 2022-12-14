@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import Footer from './components/Footer';
 import Slider from './components/Slider';
 
 function App() {
@@ -27,7 +26,6 @@ function App() {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
 
   );

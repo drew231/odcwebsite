@@ -1,5 +1,6 @@
 import React from 'react'
 import img1 from '../images/odc.png';
+import profile from '../images/profile.png'
 import Footer from './Footer';
 
 export default function StudentSec() {
@@ -26,7 +27,12 @@ export default function StudentSec() {
                 <div className='container'>
                     <div className='row py-5'>
                         <div className='col-md-3'>
-                            <p>lorem</p>
+                            <img className='img-fluid' src={profile} />
+                            <span>
+                                <h3>Andrew Livingstone</h3>
+                                <p>lorem</p>
+                            </span>
+
                         </div>
 
                         <div className='col-md-3'>
@@ -42,7 +48,7 @@ export default function StudentSec() {
                         </div>
                     </div>
 
-                    
+
 
                 </div>
 
