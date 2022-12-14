@@ -6,7 +6,7 @@ import Navbar from './Navbar'
 export default function CoursePage() {
   return (
     
-    <div>
+    <div className='Coursebg'>
       <Navbar />
       <Box />
         <Footer />

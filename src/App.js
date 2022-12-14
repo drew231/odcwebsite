@@ -21,7 +21,7 @@ function App() {
             </div>
             <ul className='text-center mt-5'>
               <a href='/coursepage'><button className='btn0'>Get Started</button></a>
-              <a href='#'><button className='btn0'>Sign In</button></a>
+              <a href='/coursepage'><button className='btn0'>Sign In</button></a>
             </ul>
           </div>
         </div>
