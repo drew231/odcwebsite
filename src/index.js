@@ -11,6 +11,7 @@ import {
   Router
 } from "react-router-dom"
 import CoursePage from './components/CoursePage';
+import StudentSec from './components/StudentSec';
 
 const router = createBrowserRouter ([
   {
@@ -26,7 +27,13 @@ const router = createBrowserRouter ([
   {
     path: "/app",
     element: <App />,
+  },
+
+  {
+    path: "/studentsec",
+    element: <StudentSec />,
   }
+
 
 ])
 

@@ -15,7 +15,7 @@ export default function Navbar() {
             
             </ul>
             <form class="d-flex" role="search">
-            <a href='/app'><button className='btn0'>Back</button></a>
+            <a href='/app' className='btn0'>Back</a>
             </form>
           </div>
         </div>

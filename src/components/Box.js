@@ -13,7 +13,7 @@ export default function Box() {
                 <div className='col-md-4'>
                     <div className='box'>
                         <img className='img-fluid' src={img2} />
-                        <a href='#'>
+                        <a href='/studentsec'>
                         <h2>HTML Basic I</h2>
                         <p>Everything you need to build fast
                             and beautiful websites with HTML5
@@ -24,20 +24,20 @@ export default function Box() {
                 <div className='col-md-4'>
                     <div className='box'>
                         <img className='img-fluid' src={img3} />
-                        <h2>Basic CSS3</h2>
+                        <a href='/studentsec'><h2>Basic CSS3</h2>
                         <p>Everything you need to build fast
                             and beautiful websites with HTML5
-                            and CSS3 in one bundle</p>
+                            and CSS3 in one bundle</p></a>
                     </div>
                 </div>
 
                 <div className='col-md-4'>
                     <div className='box'>
                         <img className='img-fluid' src={img4} />
-                        <h2>JavaScript</h2>
+                        <a href='/studentsec'><h2>JavaScript</h2>
                         <p>Everything you need to build fast
                             and beautiful websites with HTML5
-                            and CSS3 in one bundle</p>
+                            and CSS3 in one bundle</p></a>
                     </div>
                 </div>
 

@@ -176,7 +176,10 @@ ul .btn0:hover {
   }
 }
 
-form a button {
+form a {
+    list-style: none;
+    text-decoration: none;
+    background-color: white;
     padding: .5em 1.5em;
     border: 0;
     margin: 10px;
@@ -186,7 +189,7 @@ form a button {
     border-radius: 0;
 }
 
-form a button:hover {
+form a:hover {
   background-color: black;
   color: orange;
   transition: all ease-in 0.1s;
@@ -252,6 +255,11 @@ form a button:hover {
   padding: 10px 30px;
 }
 
+.box a {
+  list-style: none;
+  text-decoration: none;
+}
+
 @media (max-width: 731px) {
   .col-md-4 {
     gap: 10px;
@@ -260,6 +268,7 @@ form a button:hover {
 
 /* student_sec style */
 .studentInfo {
-  background:  rgb(255, 242, 217)
-
+  background:  rgb(255, 242, 217);
+  height: 35em;
 }
+
