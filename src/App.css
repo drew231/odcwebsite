@@ -271,22 +271,39 @@ form a:hover {
 .col-md-3 {
   display: flex;
   justify-content: center;
+  height: 100px;
+  /* background-color: dodgerblue; */
 }
 
 .col-md-3 span {
   padding-left: 8px;
 }
 
-/* search style  */
+.col-md-3 h3 {
+  font-size: 25px;
+  font-family: 'Syne', sans-serif;
+  font-weight: bold;
+  margin-bottom: 0;
+}
 
+.col-md-3 p {
+  font-size: 20px;
+  font-family: 'Syne', sans-serif;
+}
+
+.col-md-3 .img-fluid {
+  width: 80px !important;
+  height: 80px !important;
+}
+
+/* search style  */
 .searchInput {
   display: flex;
 }
 
 input {
   width: 20em !important;
-  
   position: absolute;
   right: 110px;
- 
 }
+

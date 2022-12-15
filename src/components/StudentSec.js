@@ -6,6 +6,7 @@ import Footer from './Footer';
 export default function StudentSec() {
     return (
         <div>
+            {/* nanbar */}
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"><img src={img1} /></a>
@@ -29,31 +30,37 @@ export default function StudentSec() {
                         <div className='col-md-3'>
                             <img className='img-fluid' src={profile} />
                             <span>
-                                <h3>Andrew Livingstone</h3>
-                                <p>lorem</p>
+                                <h3>Drew</h3>
+                                <p>HTML Basics 1<br /> Batch No: 001</p>
                             </span>
-
                         </div>
 
                         <div className='col-md-3'>
-                            <p>lorem</p>
+                            <img className='img-fluid' src={profile} />
+                            <span>
+                                <h3>Andrew Livingstone</h3>
+                                <p>HTML Basics 1<br /> Batch No: 001</p>
+                            </span>
                         </div>
 
                         <div className='col-md-3'>
-                            <p>lorem</p>
+                            <img className='img-fluid' src={profile} />
+                            <span>
+                                <h3>Andrew Livingstone</h3>
+                                <p>HTML Basics 1<br /> Batch No: 001</p>
+                            </span>
                         </div>
 
                         <div className='col-md-3'>
-                            <p>lorem</p>
+                            <img className='img-fluid' src={profile} />
+                            <span>
+                                <h3>Andrew Livingstone</h3>
+                                <p>HTML Basics 1<br /> Batch No: 001</p>
+                            </span>
                         </div>
                     </div>
-
-
-
                 </div>
-
             </div>
-
             <Footer />
         </div>
     )
