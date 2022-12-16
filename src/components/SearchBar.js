@@ -1,24 +1,23 @@
-import { Autocomplete } from '@mui/material'
-import React from 'react'
+import React, { useState } from 'react'
+import { Users } from './Users'
 
-export default function SearchBar({data, placeholder}) {
+export default function SearchBar({ data, placeholder }) {
+
+  const [query, setQuery] = useState("");
+ 
   return (
     <div className='searchBar'>
-        <div className='searchInput'>
-            <Autocomplete
-            
-            id='custom-input-demo'>
-                opitions={data}
-                getOpitionsLabel={(opt) => outerHeight.tile}
+      <div className='searchInput'>
+       
 
-                renderInput={(params) => (
-                    <div ref={params.InputProps.ref}>
-                        <input type='text' {...params.InputProps} />
-                        </div>
-                )}
+        {/* <ul className='list'>
+          {Users.filter(Users => Users.name.toLowerCase().includes(query)).map((Users) => (
+            <li className='list#-item'>{Users.name}</li>
+          ))}
 
-            </Autocomplete>
-        </div>
+        </ul> */}
+
+      </div>
     </div>
   )
 }

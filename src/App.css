@@ -303,7 +303,15 @@ form a:hover {
 
 input {
   width: 20em !important;
-  position: absolute;
-  right: 110px;
+  /* position: absolute;
+  right: 110px; */
+  float: right;
+  padding-right: 110px;
+  
 }
+
+.container {
+  min-height: 35em;
+}
+
 

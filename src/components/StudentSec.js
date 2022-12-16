@@ -1,11 +1,23 @@
 import React from 'react'
+import { useState } from 'react'
 import img1 from '../images/odc.png';
 import profile from '../images/profile.png'
+import Table from '../Table';
 import Footer from './Footer';
+import { Users } from './Users';
 
-export default function StudentSec() {
+
+export default function SearchBar({ data, placeholder }) {
+
+    const [query, setQuery] = useState("");
+
+    const search = (data) => {
+        return data.filter((item) => item.fitst_name.toLowerCase().includes(query)) 
+    };
+
     return (
         <div>
+
             {/* nanbar */}
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
@@ -24,43 +36,12 @@ export default function StudentSec() {
                 </div>
             </nav>
 
-            <div className='studentInfo'>
-                <div className='container'>
-                    <div className='row py-5'>
-                        <div className='col-md-3'>
-                            <img className='img-fluid' src={profile} />
-                            <span>
-                                <h3>Drew</h3>
-                                <p>HTML Basics 1<br /> Batch No: 001</p>
-                            </span>
-                        </div>
+            <input type='text' placeholder='Search...' className='search0 mt-5 mb-5 form-control'
+                onChange={(e) => setQuery(e.target.value)} />
 
-                        <div className='col-md-3'>
-                            <img className='img-fluid' src={profile} />
-                            <span>
-                                <h3>Andrew Livingstone</h3>
-                                <p>HTML Basics 1<br /> Batch No: 001</p>
-                            </span>
-                        </div>
 
-                        <div className='col-md-3'>
-                            <img className='img-fluid' src={profile} />
-                            <span>
-                                <h3>Andrew Livingstone</h3>
-                                <p>HTML Basics 1<br /> Batch No: 001</p>
-                            </span>
-                        </div>
-
-                        <div className='col-md-3'>
-                            <img className='img-fluid' src={profile} />
-                            <span>
-                                <h3>Andrew Livingstone</h3>
-                                <p>HTML Basics 1<br /> Batch No: 001</p>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                <Table data={search(Users)}/>
+         
             <Footer />
         </div>
     )
